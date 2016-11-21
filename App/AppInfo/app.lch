@@ -1,0 +1,4 @@
+[Launch] 
+ExecuteFile=FramaRoot\Apps\ownCloudPortable\ownCloudPortable.exe
+ExecuteDirectory=FramaRoot\Apps\ownCloudPortable
+ExecuteParameters=
