@@ -23,7 +23,7 @@ Blockly@rduino_AIO (All In One) is too big for classic download, so the best and
 
 How to
 ------
-Download this repo and read the how to file : https://github.com/technologiescollege/Blockly-rduino_AIO/blob/master/Blockly%40rduino_synchro.pdf
+Download this repo and read the how to file : https://github.com/technologiescollege/BlocklyArduino_AIO/raw/master/Blockly%40rduino_synchro.pdf
 
 Télécharger / download
 Décompresser / unzip
@@ -59,7 +59,7 @@ What you can do
 --------------
 
  - works on any Windows
- - **multilingual : frenh, enlish, spanish**
+ - **multilingual : french, english, spanish**
  - install drivers
  - auto detect Arduino card, with common USB chip (*ask for new one*)
  - create your own documentation and make it easy to use for pupills
