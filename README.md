@@ -47,7 +47,6 @@ Used software
  - Blockly@rduino : https://github.com/technologiescollege/Blockly-at-rduino
  - Light as embedded browser : https://sourceforge.net/projects/lightfirefox/
  
-![](https://raw.githubusercontent.com/technologiescollege/Blockly-rduino_AIO/master/Capture.jpg)
 
 How it works and what you can do
 --------------
