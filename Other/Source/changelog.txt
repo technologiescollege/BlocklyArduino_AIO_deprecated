@@ -1,5 +1,0 @@
-﻿
------ 2016-02-07 -----
-** Modifications par fat115 **
-Création initiale
-** Fin des modifications **
