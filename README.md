@@ -43,7 +43,7 @@ Used software
 
 **It contains**
 -------------
- - Arduino TechnoEduc 1.8.2 : https://github.com/technologiescollege/arduino 
+ - Arduino TechnoEduc 1.8.5 : https://github.com/technologiescollege/arduino 
  - Blockly@rduino : https://github.com/technologiescollege/Blockly-at-rduino
  - Light as embedded browser : https://sourceforge.net/projects/lightfirefox/
  
