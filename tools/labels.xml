@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Traductions>
+  <Parametre Separateur="\">
+    <Proprietes>
+      <Propriete>Caption</Propriete>
+      <Propriete>Text</Propriete>
+      <Propriete>Hint</Propriete>
+      <Propriete>Items</Propriete>
+    </Proprietes>
+  </Parametre>
+  <Langues>
+    <Langue index="FR" name="FrenchLang" default="1" />
+    <Langue index="EN" name="EnglishLang" default="0" />
+    <Langue index="ES" name="SpanishLang" default="0" />
+  </Langues>
+  <Labels>
+    <Popup type="TComboBox">
+      <Items>
+        <FR>Le fichier 'pymata_cmd.bat' n'existe pas.\Le fichier 'flash.bat' n'existe pas.\Le fichier 'rDuino_uploader.bat' n'existe pas.\Le numéro du port COM doit être un entier.\Interface réalisée par Sébastien Canet, novembre 2018 - v4.0-2.27\Carte Arduino mal connectée ou non reconnue,\vérifiez dans le gestionnaire de périphériques,\accessible depuis le menu 'Outils'.\Veuillez localiser l'EDI Arduino.\Version de Windows non reconnue ou antérieure à XP\Carte sur port COM\Aucune carte détectée\Mise à jour en cours\Téléchargement en cours\Décompression en cours\Nettoyage en cours\Fini !\Adresse IP\Port\Utilisateur\Mot de passe\Problème de téléchargement\</FR>
+        <EN>The file 'pymata_cmd.bat' does not exist.\The file 'flash.bat' does not exist.\The file 'rDuino_uploader.bat' does not exist.\#COM port must be an integer.\Software created by Sébastien Canet, november 2018 - v4.0-2.27\The Arduino card is not connected,\vérify in the 'Device Management',\shortcut is the 'Tools' menu.\Please locate Arduino IDE.\Windows version not compatible or minor to XP\COM port\No card\Update in progress\Download in progress\Unzip in progress\Cleaning...\Finished!\IP address\Port\User\Password\Download problem\</EN>
+		<ES>El fichero 'pymata_cmd.bat'no existe.\El fichero 'flash.bat' no existe.\El fichero 'rDuino_uploader.bat' no existe.\El número de puerto #COM debe ser un entero.\Software creado por Sébastien Canet, novembre 2018 - v4.0-2.27\Tarjeta Arduino no conectada,\compruebe en el Gestor de dispositivos,\en el menú Herramientas.\Versión de Windows no compatible o anterior de XP\Puerto COM\Ni tarjetas\Mejora en curso\Descargas en curso\Descompresión en curso\Limpieza en cours\Terminado!\Direccion IP\Puerto\Usuario\Contrasena\Descargas problem\</ES>
+      </Items>
+    </Popup>	
+    <Langue1 type="TMenuItem">
+      <Caption>
+        <FR>&Langues</FR>
+        <EN>&Languages</EN>
+        <ES>&Lenguajes</ES>
+      </Caption>
+    </Langue1>
+    <FrenchLang type="TMenuItem">
+      <Caption>
+        <FR>Français</FR>
+        <EN>French</EN>
+        <ES>Françes</ES>
+      </Caption>
+    </FrenchLang>
+    <EnglishLang type="TMenuItem">
+      <Caption>
+        <FR>Anglais</FR>
+        <EN>English</EN>
+        <ES>Englices</ES>
+      </Caption>
+    </EnglishLang>
+    <SpanishLang type="TMenuItem">
+      <Caption>
+        <FR>Espagnol</FR>
+        <EN>Spanish</EN>
+        <ES>Espanol</ES>
+      </Caption>
+    </SpanishLang>
+	
+    <InterfaceS2A type="TFenetrePrincipale">
+      <Caption>
+        <FR>Blockly@rduino + communication</FR>
+        <EN>Blockly@rduino control panel</EN>
+        <ES>Blockly@rduino panel de control</ES>
+      </Caption>
+    </InterfaceS2A>
+    <Fichier type="TMenuItem">
+      <Caption>
+        <FR>&Fichier</FR>
+        <EN>&File</EN>
+        <ES>&Archivo</ES>
+      </Caption>
+    </Fichier>				
+			<Aide1 type="TMenuItem">
+			  <Caption>
+				<FR>&Aide</FR>
+				<EN>&Help</EN>
+				<ES>&Ayuda</ES>
+			  </Caption>
+			</Aide1>
+					<PrparerArduino1 type="TMenuItem">
+					  <Caption>
+						<FR>&1. Préparer la carte Arduino</FR>
+						<EN>&1. prepare Arduino card</EN>
+						<ES>&1. Preparar la tarjeta Arduino</ES>
+					  </Caption>
+					</PrparerArduino1>
+					<Utilisation1 type="TMenuItem">
+					  <Caption>
+						<FR>&2. Utilisation des scripts</FR>
+						<EN>&2. how to use webserver</EN>
+						<ES>&2. Utilizacion de scripts</ES>
+					  </Caption>
+					</Utilisation1>
+					<N4Principesdeprogrammation1 type="TMenuItem">
+					  <Caption>
+						<FR>&3. Principes de programmation</FR>
+						<EN>&3. the best way to code</EN>
+						<ES>&3. Principios de programacion</ES>
+					  </Caption>
+					</N4Principesdeprogrammation1>
+					<N3Mmentodescommandes1 type="TMenuItem">
+					  <Caption>
+						<FR>&4. Mémento des commandes</FR>
+						<EN>&4. webserver command summary</EN>
+						<ES>&4. Aviso de ordenes</ES>
+					  </Caption>
+					</N3Mmentodescommandes1>
+			<Documentation1 type="TMenuItem">
+			  <Caption>
+				<FR>&Documentation</FR>
+				<EN>&Documentation</EN>
+				<ES>&Documentacion</ES>
+			  </Caption>
+			</Documentation1>
+	<Links type="TMenuItem">
+	  <Caption>
+		<FR>&Liens</FR>
+		<EN>&Links</EN>
+		<ES>&Enlaces</ES>
+	  </Caption>
+	</Links>
+			<Forum1 type="TMenuItem">
+			  <Caption>
+				<FR>Forum</FR>
+				<EN>Forum</EN>
+				<ES>Foro</ES>
+			  </Caption>
+			</Forum1>
+			<Wiki1 type="TMenuItem">
+			  <Caption>
+				<FR>Wiki</FR>
+				<EN>Wiki</EN>
+				<ES>Wiki</ES>
+			  </Caption>
+			</Wiki1>
+			<A_propos type="TMenuItem">
+			  <Caption>
+				<FR>Fichiers source</FR>
+				<EN>Github file</EN>
+				<ES>Ficheros fuente Github</ES>
+			  </Caption>
+			</A_propos>
+			<SiteofficielArduino1 type="TMenuItem">
+			  <Caption>
+				<FR>Site officiel Arduino/Genuino</FR>
+				<EN>Arduino/Genuino official site</EN>
+				<ES>Sitio oficial de Arduino/Genuino</ES>
+			  </Caption>
+			</SiteofficielArduino1>
+			<Siteofficieldes2a1 type="TMenuItem">
+			  <Caption>
+				<FR>Site officiel de PyMata-aio</FR>
+				<EN>PyMata-aio official site</EN>
+				<ES>Sitio oficial de PyMata-aio</ES>
+			  </Caption>
+			</Siteofficieldes2a1>
+			<SiteofficielderDuinoUploader type="TMenuItem">
+			  <Caption>
+				<FR>Site officiel de rDuino-Uploader</FR>
+				<EN>rDuino-Uploader official site</EN>
+				<ES>Sitio oficial de rDuino-Uploader</ES>
+			  </Caption>
+			</SiteofficielderDuinoUploader>	
+			<Apropos1 type="TMenuItem">
+			  <Caption>
+				<FR>A propos</FR>
+				<EN>About</EN>
+				<ES>Acerca de</ES>
+			  </Caption>
+			</Apropos1>		
+	<Outils1 type="TMenuItem">
+      <Caption>
+        <FR>&Outils</FR>
+        <EN>T&ools</EN>
+        <ES>H&erramientas</ES>
+      </Caption>
+    </Outils1>
+			<Gestionnairedepriphriques1 type="TMenuItem">
+			  <Caption>
+				<FR>Gestio&nnaire de périphériques</FR>
+				<EN>Device ma&nagement</EN>
+				<ES>Gestion de p&eriféricos</ES>
+			  </Caption>
+			</Gestionnairedepriphriques1>
+			<InstallDriver type="TMenuItem">
+			  <Caption>
+				<FR>&Installer les pilotes</FR>
+				<EN>&Install drivers</EN>
+				<ES>&Instalar drivers</ES>
+			  </Caption>
+			</InstallDriver>
+					<w32 type="TMenuItem">
+					  <Caption>
+						<FR>&Windows 32bits x86</FR>
+						<EN>&Windows 32bits x86</EN>
+						<ES>&Windows 32bits x86</ES>
+					  </Caption>
+					</w32>
+					<w64 type="TMenuItem">
+					  <Caption>
+						<FR>&Windows 64bits x64</FR>
+						<EN>&Windows 64bits x64</EN>
+						<ES>&Windows 64bits x64</ES>
+					  </Caption>
+					</w64>
+					<Drivers type="TMenuItem">
+					  <Caption>
+						<FR>Ouvrir le dossier 'pilotes'</FR>
+						<EN>Open 'drivers' folder</EN>
+						<ES>Abrir carpeta de 'drivers'</ES>
+					  </Caption>
+					</Drivers>	
+			<Localiserledossierdocumentation1 type="TMenuItem">
+			  <Caption>
+				<FR>Localiser la documentation</FR>
+				<EN>Locate documentation</EN>
+				<ES>Localizar documentacion</ES>
+			  </Caption>
+			</Localiserledossierdocumentation1>			
+			<Redtecter type="TMenuItem">
+			  <Caption>
+				<FR>Auto-détection de carte</FR>
+				<EN>Auto-detect Arduino card</EN>
+				<ES>Auto-detect Arduino card</ES>
+			  </Caption>
+			</Redtecter>
+			<BT_upload type="TMenuItem">
+			  <Caption>
+				<FR>Téléversement</FR>
+				<EN>Uploader</EN>
+				<ES>Cargas</ES>
+			  </Caption>
+			</BT_upload>
+			<upload_on type="TMenuItem">
+			  <Caption>
+				<FR>Stopper le serveur</FR>
+				<EN>Stop upload server</EN>
+				<ES>Detener el cargas</ES>
+			  </Caption>
+			</upload_on>	
+			<s2aio_window type="TMenuItem">
+			  <Caption>
+				<FR>Voir la fenêtre de scripts</FR>
+				<EN>Open script dialog box</EN>
+				<ES>Open script dialog box</ES>
+			  </Caption>
+			</s2aio_window>		
+			<updateMenu type="TMenuItem">
+			  <Caption>
+				<FR>Nouvelle version</FR>
+				<EN>Update</EN>
+				<ES>Actualizar</ES>
+			  </Caption>
+			</updateMenu>		
+				<forceUpdate type="TMenuItem">
+				  <Caption>
+					<FR>Mettre à jour</FR>
+					<EN>Update Blockly@rduino</EN>
+					<ES>Actualizar</ES>
+				  </Caption>
+				</forceUpdate>		
+				<proxyUpdate type="TMenuItem">
+				  <Caption>
+					<FR>Proxy</FR>
+					<EN>Proxy</EN>
+					<ES>Proxy</ES>
+				  </Caption>
+				</proxyUpdate>		
+			<Redmarrerlenavigateur1 type="TMenuItem">
+			  <Caption>
+				<FR>Redémarrer le navigateur</FR>
+				<EN>Relaunch browser</EN>
+				<ES>Reiniciar el navegadores </ES>
+			  </Caption>
+			</Redmarrerlenavigateur1>			
+			<Init type="TMenuItem">
+			  <Caption>
+				<FR>(Ré)initialiser les paramètres</FR>
+				<EN>Initialise parameters</EN>
+				<ES>Inicializar los parametros</ES>
+			  </Caption>
+			</Init>	 
+    <MenuConnect type="TMenuItem">
+      <Caption>
+        <FR>Port COM :</FR>
+        <EN>COM port #:</EN>
+        <ES>Puerto COM:</ES>
+      </Caption>
+    </MenuConnect>  
+    <MenuUnconnect type="TMenuItem">
+      <Caption>
+        <FR>Port COM :</FR>
+        <EN>COM port #:</EN>
+        <ES>Puerto COM:</ES>
+      </Caption>
+    </MenuUnconnect> 
+    <BT_supervision type="TMenuItem">
+      <Caption>
+        <FR>&Supervision des E/S</FR>
+        <EN>I/O &Supervision</EN>
+        <ES>E/S &supervisar</ES>
+      </Caption>
+    </BT_supervision>
+    <supervision_on type="TMenuItem">
+      <Caption>
+        <FR>&Stopper la communication</FR>
+        <EN>&Stop communication</EN>
+        <ES>Detener la comunicacion.</ES>
+      </Caption>
+    </supervision_on>			
+	<Firmata type="TMenuItem">
+	  <Caption>
+		<FR>Téléverser 'FirmataPlus' dans une carte</FR>
+		<EN>Upload 'FirmataPlus' in card</EN>
+		<ES>Descargar 'Firmata' en </ES>
+	  </Caption>
+	</Firmata>	
+			<Firmata_DuemilanoveDiecimila328P type="TMenuItem">
+			  <Caption>
+				<FR>Arduino/Genuino Duemilanove | Diecimila (328P)</FR>
+				<EN>Arduino/Genuino Duemilanove | Diecimila (328P)</EN>
+				<ES>Arduino/Genuino Duemilanove | Diecimila (328P)</ES>
+			  </Caption>
+			</Firmata_DuemilanoveDiecimila328P>
+			<Firmata_Leonardo type="TMenuItem">
+			  <Caption>
+				<FR>Arduino/Genuino Leonardo</FR>
+				<EN>Arduino/Genuino Leonardo</EN>
+				<ES>Arduino/Genuino Leonardo</ES>
+			  </Caption>
+			</Firmata_Leonardo>
+			<Firmata_lilypad type="TMenuItem">
+			  <Caption>
+				<FR>Arduino/Genuino Lilypad</FR>
+				<EN>Arduino/Genuino Lilypad</EN>
+				<ES>Arduino/Genuino Lilypad</ES>
+			  </Caption>
+			</Firmata_lilypad>
+			<Firmata_Mega type="TMenuItem">
+			  <Caption>
+				<FR>Arduino/Genuino Mega (2560)</FR>
+				<EN>Arduino/Genuino Mega (2560)</EN>
+				<ES>Arduino/Genuino Mega (2560)</ES>
+			  </Caption>
+			</Firmata_Mega>
+			<Firmata_Micro type="TMenuItem">
+			  <Caption>
+				<FR>Arduino/Genuino Micro</FR>
+				<EN>Arduino/Genuino Micro</EN>
+				<ES>Arduino/Genuino Micro</ES>
+			  </Caption>
+			</Firmata_Micro>
+			<Firmata_Mini type="TMenuItem">
+			  <Caption>
+				<FR>Arduino/Genuino Mini</FR>
+				<EN>Arduino/Genuino Mini</EN>
+				<ES>Arduino/Genuino Mini</ES>
+			  </Caption>
+			</Firmata_Mini>
+			<Firmata_Nano type="TMenuItem">
+			  <Caption>
+				<FR>Arduino/Genuino Nano (328P)</FR>
+				<EN>Arduino/Genuino Nano (328P)</EN>
+				<ES>Arduino/Genuino Nano (328P)</ES>
+			  </Caption>
+			</Firmata_Nano>
+			<Firmata_Pro8 type="TMenuItem">
+			  <Caption>
+				<FR>Arduino/Genuino Pro Mini 3.3V ATmega328</FR>
+				<EN>Arduino/Genuino Pro Mini 3.3V ATmega328</EN>
+				<ES>Arduino/Genuino Pro Mini 3.3V ATmega328</ES>
+			  </Caption>
+			</Firmata_Pro8>
+			<Firmata_Pro16 type="TMenuItem">
+			  <Caption>
+				<FR>Arduino/Genuino Pro Mini 5V ATmega328</FR>
+				<EN>Arduino/Genuino Pro Mini 5V ATmega328</EN>
+				<ES>Arduino/Genuino Pro Mini 5V ATmega328</ES>
+			  </Caption>
+			</Firmata_Pro16>
+			<Firmata_Uno type="TMenuItem">
+			  <Caption>
+				<FR>Arduino/Genuino Uno</FR>
+				<EN>Arduino/Genuino Uno</EN>
+				<ES>Arduino/Genuino Uno</ES>
+			  </Caption>
+			</Firmata_Uno>
+			<Firmata_Yun type="TMenuItem">
+			  <Caption>
+				<FR>Arduino/Genuino Yùn</FR>
+				<EN>Arduino/Genuino Yùn</EN>
+				<ES>Arduino/Genuino Yùn</ES>
+			  </Caption>
+			</Firmata_Yun>
+			<Firmata_RoMeo type="TMenuItem">
+			  <Caption>
+				<FR>DFRobot RoMeo v2</FR>
+				<EN>DFRobot RoMeo v2</EN>
+				<ES>DFRobot RoMeo v2</ES>
+			  </Caption>
+			</Firmata_RoMeo>
+			<Firmata_dagurs040 type="TMenuItem">
+			  <Caption>
+				<FR>Dagu RS040</FR>
+				<EN>Dagu RS040</EN>
+				<ES>Dagu RS040</ES>
+			  </Caption>
+			</Firmata_dagurs040>
+			<Firmata_makeblockmcore type="TMenuItem">
+			  <Caption>
+				<FR>Makeblock mCore / mBot</FR>
+				<EN>Makeblock mCore / mBot</EN>
+				<ES>Makeblock mCore / mBot</ES>
+			  </Caption>
+			</Firmata_makeblockmcore>
+			<Firmata_makeblockmegaPi type="TMenuItem">
+			  <Caption>
+				<FR>Makeblock MegaPi</FR>
+				<EN>Makeblock MegaPi</EN>
+				<ES>Makeblock MegaPi</ES>
+			  </Caption>
+			</Firmata_makeblockmegaPi>
+			<Firmata_makeblockorion type="TMenuItem">
+			  <Caption>
+				<FR>Makeblock Me Orion</FR>
+				<EN>Makeblock Me Orion</EN>
+				<ES>Makeblock Me Orion</ES>
+			  </Caption>
+			</Firmata_makeblockorion>
+  </Labels>
+</Traductions>
