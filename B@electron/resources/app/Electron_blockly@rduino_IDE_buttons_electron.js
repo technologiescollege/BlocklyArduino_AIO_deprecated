@@ -11,36 +11,43 @@ const { ipcRenderer } = require("electron")
 ** btn_flash_local: upload hex file in Arduino board
 */
 
-sp.list(function(err,ports) {
-	localStorage.setItem("nb_com",ports.length)
-	ports.forEach(function(port) {
-		var opt = document.createElement('option')
-		opt.value = port.comName
-		opt.text = port.comName
-		document.getElementById('serialport').appendChild(opt)
-	})
-})
-
-window.addEventListener('load', function load(event) {
-	$('#serialport').mouseover(function(event) {
-		sp.list(function(err,ports) {
-			var nbCom = localStorage.getItem("nb_com"), menu_com = document.getElementById('serialport'), menu_opt = menu_com.getElementsByTagName('option')
-			if(ports.length != nbCom){
-				while(menu_opt[1]) {
-					menu_com.removeChild(menu_opt[1])
-				}
-				ports.forEach(function(port){
+var menu_com = document.getElementById('serialport_ide')
+menu_com.addEventListener('mouseover', function(event) {
+	sp.list(function(err, ports) {
+		var menu_opt = menu_com.getElementsByTagName('option')
+		var count = 0
+		var scanDone = false
+		if(ports.length <1) console.log('No Arduino')
+		//compare old list of COM port and new one
+		if(ports != localStorage.getItem('oldPorts')){
+			while(menu_opt[1]) {
+				menu_com.removeChild(menu_opt[1])
+			}
+			ports.forEach(function(port){
+				count += 1
+				var portManufact = port['manufacturer']
+				//log all boards
+				console.log(port['manufacturer'] + ' port ' + port.comName +  ' ID ' + port.vendorId + '\n')
+				//only if board has Vendor Id knowed : Arduino, CH340, etc
+				if (typeof portManufact !== 'undefined' && (port.vendorId == '2341' || port.vendorId == '2A03' || port.vendorId == '1A86' || port.vendorId == '0403' || port.vendorId == '10C4')) {
 					var opt = document.createElement('option')
 					opt.value = port.comName
 					opt.text = port.comName
-					document.getElementById('serialport').appendChild(opt)
-				})
-				localStorage.setItem("nb_com",ports.length)
-			}
-		})
+					document.getElementById('serialport_ide').appendChild(opt)
+					scanDone = true
+				}
+				if (count === ports.length && scanDone === false) {
+					console.log('No Arduino')
+				}
+			})
+			localStorage.setItem('oldPorts', ports)
+		}
 	})
+}, false)
+
+window.addEventListener('load', function load(event) {
 	document.getElementById('btn_term').onclick = function(event) {
-		var com = document.getElementById('serialport').value
+		var com = document.getElementById('serialport_ide').value
 		if (com != "no_com") {
 			localStorage.setItem("com",com)
 			ipcRenderer.send("prompt", "")
@@ -98,7 +105,7 @@ window.addEventListener('load', function load(event) {
 	document.getElementById('btn_flash_local').onclick = function(event) {
 		var file_path = '.\\tmp'
 		var carte = document.getElementById('board_select').value
-		var com = document.getElementById('serialport').value
+		var com = document.getElementById('serialport_ide').value
 		if (carte=="none"||com=="no_com"){
 			document.getElementById('local_debug').style.color = '#ff0000'
 			document.getElementById('local_debug').textContent = 'Sélectionner un port !'
