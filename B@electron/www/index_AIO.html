@@ -16,7 +16,7 @@
         <!--Arduino generator, must be defined NOW-->
         <script type="text/javascript" src="generators/generator_arduino.js"></script>
 
-        <script type="text/javascript" src="core/BlocklyArduino/blockly@rduino_core_Electron.js"></script>
+        <script type="text/javascript" src="core/BlocklyArduino/blockly@rduino_core_AIO.js"></script>
         <script type="text/javascript" src="core/BlocklyArduino/blockly@rduino_boards.js"></script>
         <script type="text/javascript" src="core/BlocklyArduino/blockly@rduino_functions_buttons_Electron.js"></script>
         <script type="text/javascript" src="core/BlocklyArduino/blockly@rduino_tools.js"></script>
@@ -124,7 +124,8 @@
                                     <a ><i class="fa fa-user"></i> <span id="span_menu_5"> </span> <i class="fa fa-caret-down"></i></a>
                                     <ul class="submenu">
                                         <li><a href="#" id="menu_51"> <span id="span_menu_51"> </span> </a></li>
-                                        <li><a href="http://www.libreduc.cc/wiki/doku.php/fr/arduino/blockly_rduino" target="_blank" id="menu_52"> <span id="span_menu_52"> </span> </a></li>
+                                        <!-- <li><a href="http://www.libreduc.cc/wiki/doku.php/fr/arduino/blockly_rduino" target="_blank" id="menu_52"> <span id="span_menu_52"> </span> </a></li> -->
+                                        <li><a href="http://blockly.technologiescollege.fr/" target="_blank" id="menu_52"> <span id="span_menu_52"> </span> </a></li>
                                         <li><a href="http://blockly.technologiescollege.fr/forum/" target="_blank" id="menu_53"> <span id="span_menu_53"> </span> </a></li>
                                     </ul>
                                 </li>
@@ -192,7 +193,11 @@
                         <span id="span_flash_pymata"> </span>
 					</button>
 					<span id="span_pymata_toggle_text" style="color:white"></span>
-					<input id="toggle-pymata" data-toggle="toggle" data-off="<span id='span_pymataOFF'> </span>" data-on="<span id='span_pymataON'> </span>" data-onstyle="primary" data-offstyle="default" data-width="120" type="checkbox"/>
+					<button id="toggle-pymata" class="btn btn-arduino">
+						<span class="fas fa-arrow-right fa-1_5x fa-fw"> </span>
+                        <span id="span_flash_pymata"> </span>
+					</button>
+					<!-- <input id="toggle-pymata" data-toggle="toggle" data-off="<span id='span_pymataOFF'> </span>" data-on="<span id='span_pymataON'> </span>" data-onstyle="primary" data-offstyle="default" data-width="120" type="checkbox"/> -->
 					<span id="sup_debug" style="color:white"></span>
 				</div>
             </div>
@@ -372,7 +377,8 @@
                         <br />
                         <b>Forum</b> : <a href='http://blockly.technologiescollege.fr/forum' target='blank'><i class="fab fa-wpforms"></i> http://blockly.technologiescollege.fr/forum</a>
                         <br />
-                        <br /><b>Documentation :</b> <a href="http://www.libreduc.cc/wiki/doku.php" target='blank'><i class="fab fa-wikipedia-w"></i> wiki</a>
+                        <!-- <br /><b>Documentation :</b> <a href="http://www.libreduc.cc/wiki/doku.php" target='blank'><i class="fab fa-wikipedia-w"></i> wiki</a> -->
+                        <br /><b>Documentation :</b> <a href="http://blockly.technologiescollege.fr/" target='blank'><i class="fab fa-wikipedia-w"></i> wiki</a>
                         <br />
                         <br />
                         <span><b>Blockly@rduino</b></span> (<a href="https://github.com/technologiescollege/Blockly-at-rduino" target='blank'><i class="fab fa-github"></i> Github</a>)
@@ -605,7 +611,8 @@
                                 <button id="btn_videos" class='btn btn-success btn-info text-left'>
                                     <span class="fa fa-film"> </span>
                                 </button>
-                                <a id="btn_doc" class='btn btn-success btn-info text-left' href="http://www.libreduc.cc/wiki/doku.php/fr/arduino/blockly_rduino" target="_blank" role='button'>
+                                <!-- <a id="btn_doc" class='btn btn-success btn-info text-left' href="http://www.libreduc.cc/wiki/doku.php/fr/arduino/blockly_rduino" target="_blank" role='button'> -->
+                                <a id="btn_doc" class='btn btn-success btn-info text-left' href="http://blockly.technologiescollege.fr/" target="_blank" role='button'>
                                     <span class="glyphicon glyphicon-info-sign"></span>
                                 </a>
                                 <a id="btn_tuto" class='btn btn-success btn-info text-left' href="http://blockly.technologiescollege.fr/forum/" target="_blank" role='button'>
@@ -647,6 +654,16 @@
                 </div>
             </div>
         </div>
+		<!-- message modal -->
+		<div class="modal fade" id="message" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal-dialog modal-sm">
+				<div class="modal-content">
+					<div class="modal-body" >
+						<div id = "messageDIV"></div>
+					</div>  
+				</div>
+			</div>
+		</div>
         <!--only for IDE mode -->
         <div id="wiring_dialog">
             <iframe frameborder="0" marginwidth="0" marginheight="0">
